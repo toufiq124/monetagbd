@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Monetag Ads Page - Earn Rewards by Watching Ads">
+    <meta name="keywords" content="Monetag, Ads, Earn Money, CPM">
+    <meta name="author" content="Your Name">
+    <title>Monetag Ads Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            width: 90%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        button {
+            padding: 15px 25px;
+            border: none;
+            border-radius: 8px;
+            background-color: #ff5722;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #e64a19;
+            transform: translateY(-5px);
+        }
+
+        .ad-container {
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            display: none; /* Initially hidden */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Watch Ads & Earn Rewards!</h1>
+        <p>Click the button below to display ads and support us!</p>
+        <button onclick="showAd()">Show Ads</button>
+        <div id="ad-container" class="ad-container">
+            <h3>Sponsored Ads</h3>
+            <!-- Monetag Ad Script -->
+            <script src="//niphaumeenses.net/vignette.min.js" data-zone="8699700" data-sdk="show_8699700"></script>
+        </div>
+    </div>
+
+    <script>
+        function showAd() {
+            const adContainer = document.getElementById('ad-container');
+            adContainer.style.display = 'block'; // Show the ad container
+        }
+    </script>
+</body>
+</html>
